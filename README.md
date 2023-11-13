@@ -1,27 +1,36 @@
-# RoutingExample
+# Exemplo de Routing e Forms com Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+## Funcionamento
 
-## Development server
+Abaixo, podemos ver o roteamento funcionando (é possível escolher entre a aba "Informações" e "Inscreva-se"). Além disso, na aba "Inscreva-se", foi usado o componente forms do Angular para simular o cadastro em um site.
+![](assets/ex7.gif)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Comparação com React
 
-## Code scaffolding
+### Angular:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### 1. **Estrutura do Projeto:**
+   - O Angular utiliza uma estrutura de projeto baseada em módulos, com arquivos separados para componentes, serviços, módulos de roteamento, etc.
 
-## Build
+#### 2. **Criação de Componentes:**
+   - Os componentes são criados usando o Angular CLI, que gera automaticamente arquivos para o componente, como HTML, CSS e TypeScript.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### 3. **Roteamento:**
+   - O Angular possui um sistema de roteamento integrado. O módulo de roteamento (`AppRoutingModule`) é usado para definir as rotas e conectar os componentes correspondentes.
 
-## Running unit tests
+#### 4. **Formulários:**
+   - O Angular tem um módulo de formulários reativos e model-driven, que oferece uma maneira poderosa de lidar com formulários.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### React:
 
-## Running end-to-end tests
+#### 1. **Estrutura do Projeto:**
+   - O React permite uma flexibilidade maior na estrutura do projeto. Pode ser organizado de acordo com as preferências do desenvolvedor ou seguindo convenções de pastas populares como "src/components", "src/pages", etc.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### 2. **Criação de Componentes:**
+   - Os componentes React são criados como funções ou classes. Os arquivos JSX (JavaScript XML) contêm tanto a lógica quanto a marcação do componente.
 
-## Further help
+#### 3. **Roteamento:**
+   - Para roteamento em React, bibliotecas de terceiros como React Router são frequentemente utilizadas. Isso envolve a criação de um componente de roteamento principal e a definição de rotas para componentes específicos.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### 4. **Formulários:**
+   - O React não possui um módulo de formulários integrado como o Angular. Os formulários são tratados utilizando o estado do componente e manipuladores de eventos.
